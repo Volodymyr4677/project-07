@@ -48,8 +48,17 @@ img {
 }
 
 .main-btn {
+    border: none;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
     border-radius: 15px;
-    background: #1b414b;
+}
+
+.main-btn:hover {
+    color: #1B414B;
+    background-color: #FBFBFB;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -61,12 +70,14 @@ img {
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
+        padding: 0 32px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .container {
         width: 1280px;
+        padding: 0 50px;
     }
 }
 

@@ -1,0 +1,162 @@
+/*--------RENT-A-YACHT------------*/
+
+.container {
+  background-color: transparent;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.rent-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+}
+
+.modal-field {
+  margin-bottom: 40px;
+}
+
+.modal-input {
+  background-color: transparent;
+  width: 335px;
+  height: 42px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(251, 251, 251, 0.4);
+  margin-bottom: 18px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+  /* display: flex;
+  gap: calc((100% - 36px) / 3); */
+}
+
+.modal-input:hover,
+.modal-input:focus,
+.modal-input:active,
+.modal-comment:hover,
+.modal-comment:focus,
+.modal-comment:active {
+  border-color: #fbfbfb;
+  color: #fbfbfb;
+}
+
+.modal-comment {
+  background-color: transparent;
+  width: 335px;
+  height: 108px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(251, 251, 251, 0.4);
+  resize: none;
+  outline: transparent;
+}
+
+.modal-btn {
+  padding: 14px 44px;
+  width: 122px;
+  height: 46px;
+  background-color: #1b414b;
+  font-weight: 500;
+  color: #fbfbfb;
+  margin-bottom: 80px;
+}
+
+.rent-img {
+  border-radius: 24px;
+  width: 768px;
+  height: 536px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .rent-title {
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    padding-left: 116px;
+    margin-bottom: 50px;
+  }
+
+  .modal-field {
+    margin-bottom: 52px;
+  }
+
+  .modal-form {
+    margin-left: 116px;
+  }
+
+  .modal-input {
+    width: 472px;
+    height: 54px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .modal-comment {
+    width: 472px;
+    height: 116px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .modal-btn {
+    padding: 18px 75px;
+    width: 194px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .rent-title {
+    width: 381px;
+    height: 48px;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    padding-left: 0px;
+    margin-left: 50px;
+    justify-content: start;
+    margin-bottom: 50px;
+  }
+
+  .modal-form {
+    margin-left: 50px;
+  }
+
+  .rent-image {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+}
+/*----------------------*/

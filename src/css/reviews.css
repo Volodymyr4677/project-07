@@ -1,0 +1,156 @@
+.reviews {
+    font-family: 'Gilroy', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+
+.ppp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: gray;
+    margin-bottom: 75px;
+    font-size: 1.03em;
+    margin: 20px auto 0;
+    width: 571px;
+height: 36px;
+
+}
+
+.reviews-section-name {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+
+.reviews-list {
+    display: flex;
+
+}
+
+.reviews-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    padding: 32px 36px;
+    height: auto;
+    background-color: #FBFBFB;
+    margin: 75px auto 0;
+width: 392px;
+height: 282px;
+
+
+}
+
+.review-img {
+    margin-bottom: 24px;
+    border: #ffffff;
+    border-radius: 50%;
+}
+
+.reviews-item-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #0c0c0c;
+    margin-bottom: 8px;
+}
+
+.reviews-paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(12, 12, 12, 0.4);
+}
+
+.item-2 {
+    display: none;
+}
+
+.item-3 {
+    display: none;
+}
+
+
+@media screen and (min-width:768px) {
+    .reviews {
+        margin-bottom: 80px;
+    }
+
+    .item-2 {
+        display: flex;
+    }
+
+    .ppp {
+        margin-bottom: 40px;
+    }
+
+    .reviews-list {
+        gap: 16px;
+    }
+
+    .reviews-list-item {
+        width: calc((100% - 16px) / 2);
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .reviews {
+        margin-bottom: 100px;
+    }
+
+    .item-3 {
+        display: flex;
+    }
+
+    .reviews-list {
+        gap: 20px;
+    }
+
+    .reviews-list-item {
+        width: calc((100% - 40px) / 3);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .catalog-items {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews-section-name {
+        font-size: 1.8em;
+                max-width: 90%;
+                line-height: 1.2em;
+    }
+
+    .ppp {
+        margin-bottom: 40px;
+        font-size: 0.8em;
+                max-width: 100%;
+                line-height: 1.3em;
+                margin-top: 10px;
+    }
+}

@@ -14,7 +14,7 @@
     rel="stylesheet">
   
   <script type="module" crossorigin src="/project-07/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/project-07/assets/index-386b2898.css">
+  <link rel="stylesheet" href="/project-07/assets/index-483f3d08.css">
 </head>
 
 <body>
@@ -106,7 +106,88 @@
 </div>
 </div>
 </section>
-    
+    <section class="rent">
+  <div class="container">
+    <div class="rent-modal">
+      <h2 class="rent-title" id="rent-a-yacht">Rent a yacht now</h2>
+      <form class="modal-form">
+        <div class="modal-field">
+          <div class="modal-field-wrap">
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="modal-field-wrap">
+            <input
+              type="email"
+              class="modal-input"
+              name="user-email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+          </div>
+
+          <div class="modal-field-wrap">
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              placeholder="Phone number"
+              pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+              title="+38-067-111-11-11"
+              required
+            />
+          </div>
+
+          <div class="modal-field-comment">
+            <textarea
+              class="modal-comment"
+              name="user-comment"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+        </div>
+
+        <button class="modal-btn main-btn" type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="rent-image">
+      <picture>
+        <source
+          srcset="/project-07/assets/rent-dt-ebb4e5ed.jpg 1x, /project-07/assets/rent-dt-2x-10b83c15.jpg 2x"
+          media="(min-width:1440px)"
+        />
+
+        <source
+          srcset="/project-07/assets/rent-dt-small-b28b94f5.jpg 1x, /project-07/assets/rent-dt-small-2x-041209a6.jpg 2x"
+          media="(min-width:1280px)"
+        />
+
+        <source
+          srcset="../image-rent/rent-tab.jpg 1x, /image-rent/rent-tab-2x.jpg 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="../image-rent/rent-mob.jpg 1x, /image-rent/rent-mob-2x.jpg 2x"
+          media="(max-width:767px)"
+        />
+        <img
+          src="/project-07/assets/rent-dt-ebb4e5ed.jpg"
+          alt="Rent a yacht"
+          width="360"
+          class="rent-img"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
     
   </main>
   <footer class="footer-section">
